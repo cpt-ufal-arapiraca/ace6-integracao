@@ -9,7 +9,11 @@ function Login() {
             <img class="object-cover h-full" src={sideImage}></img>
         </div>
         <div class="h-screen flex items-center justify-center w-2/3">
-        <div class="flex flex-col w-1/3">
+        <div class="flex flex-col w-1/3 gap-8">
+            <div class="pb-20">
+                <h1 class="font-bold text-6xl text-gray2">Login</h1>
+
+            </div>
             <InputField title="Nome de Usuário" id="username"></InputField>
             <InputField title="Senha" id="password" type="password"></InputField>
             <Button title="Entrar"></Button>
