@@ -13,6 +13,7 @@ module.exports = {
         'highlight': '#00AEFF',
         'light-blue': '#47B3E4',
         'gray2': '#4F4F4F',
+        'gray3': '#828282',
         'gray4': '#BDBDBD'
       },
     },

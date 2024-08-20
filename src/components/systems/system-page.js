@@ -1,5 +1,7 @@
 import DateInfo from "../date-info";
 import HelpButton from "../help-button";
+import PageSelectorButton from "./page-button";
+import PageSelector from "./page-selector";
 import SystemArea from "./system-area";
 
 function SystemPage(){
@@ -7,6 +9,7 @@ function SystemPage(){
         <div className="w-full h-screen relative">
             <DateInfo/>
             <SystemArea/>
+            <PageSelector/>
             <HelpButton/>
         </div>
     )
