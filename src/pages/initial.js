@@ -1,5 +1,5 @@
-import Sidebar from "../components/sidebar";
-import UserInfo from "../components/user-info";
+import Sidebar from "../components/sidebar/sidebar";
+import UserInfo from "../components/sidebar/user-info";
 
 
 function Initial(){
