@@ -6,28 +6,20 @@ import settings from "../../assets/icons/settings.svg"
 import notifications from "../../assets/icons/notifications.svg"
 import SidebarFooter from "./sidebar-footer";
 
-function Sidebar(){
+function Sidebar({ children }){
     return(
-        <div className="w-1/5 h-screen bg-primary rounded-r-xl flex flex-col items-center shadow-lg relative">
-            <UserInfo
-            name="Jonh doe"
-            picture="{picture}"></UserInfo>
-            
-            <SidebarButton
-                title="Início"
-                icon={home}
-            />
-            <SidebarButton
-                title="Configurações"
-                icon={settings}
-            />
-            <Separator/>
-            <SidebarButton
-                title="Notificações"
-                icon={notifications}
-            />
-            <SidebarFooter/>
-        </div>
+        <aside className="h-screen w-full">
+            <nav className="h-full flex flex-col bg-primary shadow-sm w-full">
+                <div className="p-4 pb-2 flex justify-between items-center">
+                <UserInfo
+                    name="Jonh doe"
+                    picture="{picture}"></UserInfo>
+                </div>
+                <ul className="flex-1 border-b">{ children }</ul>
+
+                <SidebarFooter/>        
+            </nav>
+        </aside>
     )
 }   
 export default Sidebar;

@@ -1,6 +1,6 @@
-function Separator(){
+function Separator({color}){
     return(
-        <div className="w-11/12 h-[1px] bg-light-blue">
+        <div className={`w-11/12 h-[1px] ${color}`}>
 
         </div>
     )
